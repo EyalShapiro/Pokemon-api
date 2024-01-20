@@ -1,32 +1,67 @@
-# Pokemon Info link me project:<https://pokemon-info24.netlify.app/>
+# Demo
 
-# React + TypeScript + Vite
+Live Demo - <https://pokemon-info24.netlify.app/>
 
+## Project Summary
+
+$$
+- Pokemon Data from [PokéAPI](https://pokeapi.co/)
+- React + TypeScript + Vite[Vite](https://vitejs.dev/)
+$$
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Steps to run Pokédex in your local environment.
 
-## Expanding the ESLint configuration
+1. Clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```sh
+   git clone https://github.com/EyalShapiro/Pokemon-api.git
+   or 
+   ssh git@github.com:EyalShapiro/Pokemon-api.git
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Go to the project directory
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```sh
+   > cd pokemon-api
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Install the NPM packages
+Just need to make sure before the 'package.json' file exists
+
+   ```sh
+   > npm i
+     if not then
+     > npm install
+   ```
+
+4. Start the development server
+
+   ```sh
+   > npm run dev
+   ```
+
+5. Development server will start at `localhost:5173`
+
+<br/>
+
+**Then open <http://localhost:5173/> to see your app.**
+
+## Bundling
+
+Run npm run build script to generate a production build
+
+- Run `npm run build` script to generate a production build
+- Build will output to `dist` folder.
+
+### Then inside the cmd you can do the following
+
+  Shortcuts
+  press r + enter to restart the server.
+  press u + enter to show server url.
+  press o + enter to open in browser.
+  press c + enter to clear console.
+  press q + enter to quit.
+  
