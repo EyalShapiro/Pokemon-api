@@ -4,10 +4,10 @@ Live Demo - <https://pokemon-info24.netlify.app/>
 
 ## Project Summary
 
-$$
+$
 - Pokemon Data from [PokéAPI](https://pokeapi.co/)
 - [React + TypeScript + Vite](https://vitejs.dev/)
-$$
+$
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 # Development
