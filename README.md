@@ -4,7 +4,6 @@ Live Demo - <https://pokemon-info24.netlify.app/>
 
 ## Project Summary
 
-$
 - Pokemon Data from [PokéAPI](https://pokeapi.co/)
 - [React + TypeScript + Vite](https://vitejs.dev/)
 $
@@ -25,22 +24,22 @@ Steps to run Pokédex in your local environment.
 2. Go to the project directory
 
    ```sh
-   > cd pokemon-api
+   cd pokemon-api
    ```
 
 3. Install the NPM packages
 Just need to make sure before the 'package.json' file exists
 
    ```sh
-   > npm i
-     if not then
-     > npm install
+   npm i
+   or
+   npm install
    ```
 
 4. Start the development server
 
    ```sh
-   > npm run dev
+   npm run dev
    ```
 
 5. Development server will start at `localhost:5173`
@@ -58,10 +57,11 @@ Run npm run build script to generate a production build
 
 ### Then inside the cmd you can do the following
 
-  Shortcuts
-  press r + enter to restart the server.
-  press u + enter to show server url.
-  press o + enter to open in browser.
-  press c + enter to clear console.
+  Shortcuts<br/>
+
+  press r + enter to restart the server.<br/>
+  press u + enter to show server url.<br/>
+  press o + enter to open in browser.<br/>
+  press c + enter to clear console.<br/>
   press q + enter to quit.
   
