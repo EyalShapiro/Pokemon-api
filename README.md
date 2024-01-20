@@ -47,14 +47,6 @@ Just need to make sure before the 'package.json' file exists
 <br/>
 
 **Then open <http://localhost:5173/> to see your app.**
-
-## Bundling
-
-Run npm run build script to generate a production build
-
-- Run `npm run build` script to generate a production build
-- Build will output to `dist` folder.
-
 ### Then inside the cmd you can do the following
 
   Shortcuts<br/>
@@ -65,3 +57,11 @@ Run npm run build script to generate a production build
   press c + enter to clear console.<br/>
   press q + enter to quit.
   
+## Bundling
+
+Run npm run build script to generate a production build
+
+- Run `npm run build` script to generate a production build
+- Build will output to `dist` folder.
+
+
