@@ -1,5 +1,4 @@
 # Demo
-
 Live Demo - <https://pokemon-info24.netlify.app/>
 
 ## Project Summary

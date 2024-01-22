@@ -1,6 +1,5 @@
-
 .app-home {
-  background-image: url("./leg.png");
+  background-image: url("./assets/leg.png");
   background-attachment: scroll, fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +15,8 @@
   text-align: center;
   position: sticky;
 }
-#total{
+
+#total {
   color: #ff00ffa6;
   background-color: #100720;
   font-family: 'Pokemon Solid', sans-serif;
@@ -27,13 +27,16 @@
   justify-self: center;
 
 }
+
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0.1%;
 }
-.pagination{
+
+.pagination {
   padding: 1%;
   margin-left: 20%;
   text-align: center;
@@ -45,17 +48,19 @@
   margin-bottom: 3%;
   margin-top: 2%;
 }
-.pagination>p{
+
+.pagination > p {
   font-size: 150%;
 
 }
+
 .pokemon-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   border: #548F8F 10px ridge;
   outline: 8px #378484 solid;
-  background:rgba(65, 153, 153, 0.2);
+  background: rgba(65, 153, 153, 0.2);
   box-sizing: border-box;
   border-radius: 1rem;
   padding: auto;
@@ -69,6 +74,7 @@
   font-size: 150%;
 
 }
+
 #prev {
   cursor: pointer;
   border-radius: 1rem;

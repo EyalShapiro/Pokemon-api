@@ -2,13 +2,13 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { NavBar } from "./Components/RootBar/root navbar.jsx";
+import { NavBar } from "./Components/RootBar/root navbar.tsx";
 import Home from "./pages/Home/index.jsx";
-import SearchPokeApp from "./Components/pokemon search/AppSearch.jsx";
+import SearchPokeApp from "./Components/pokemon search/AppSearch.tsx";
 import MyTeam from "./pages/Team Poke/Team.jsx";
-import NotFoundPage from "./pages/NotFoundPage/index.jsx";
-import barIco from '../assets/img/start.png';
-import PokemonDetails from "./Components/PokemonDetails/PokemonDetails.jsx";
+import NotFoundPage from "./pages/NotFoundPage/index.tsx";
+import barIco from '../assets/start.png';
+import PokemonDetails from "./Components/PokemonDetails/PokemonDetails.tsx";
 
 
 function App() {

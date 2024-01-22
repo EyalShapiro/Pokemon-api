@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { fetchPokemonList } from "../../Api/list_DATA.ts";
-import "./assets/PokemonList.css";
+import "./PokemonList.css";
 import { ShowPokeSelect } from './ShowPokeSelect';
 import GetGen from "../../Api/data/Gen.json";
 
@@ -12,7 +12,6 @@ function PokemonList() {
    const [selectedGen, setSelectedGen] = useState("all");
    const [start, SetStart] = useState(1);
    const [limit, SetLimit] = useState(10);
-   const [loading, SetLoading] = useState(true);
 
    useEffect(() => {
       const fetchData = async () => {
@@ -68,7 +67,7 @@ function PokemonList() {
             <button onClick={handlePrevPage} id='prev'>Previous</button>
             <button onClick={handleNextPage} id='prev'>Next</button>
          </div>
-         
+
          <div className="pokemon-list">
             {pokemonData.map((pokemon) => (
                <ShowPokeSelect handleCardClick={handleCardClick} pokemon={pokemon} />

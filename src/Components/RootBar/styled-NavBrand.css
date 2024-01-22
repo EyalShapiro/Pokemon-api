@@ -7,36 +7,25 @@
   width: 100%;
   z-index: 1;
   top: 0;
+
 }
 
-.pag_bar {
-  float: left;
-  font-family: 'Pokemon Solid', sans-serif;
-  text-align: center;
-  padding: 2px 8px;
-  text-decoration: none;
-  border: #4074b5 ridge 4px;
-  margin-bottom: 0.5%;
-}
 
 .navbar ul a.active {
   color: #1ad760;
 
 }
 
-.navbar ul a {
-  color: #FFCB05;
-  text-decoration: none;
-}
+
 
 .navbar ul a:hover {
-  color: #4074b5;
-  background-color: lavenderblush;
+  color: lightseagreen;
+  background-color: #f5fff062;
 }
 
 .header {
   word-wrap: break-word;
-  background-image: url("./top_title.svg");
+  background-image: url("./assets/top_title.svg");
   background-clip: padding-box;
   background-repeat: no-repeat;
   font-size: 100px;

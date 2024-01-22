@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react';
-import './assets/pokeImg.css';
+import './pokeImg.css';
 
-interface PokemonBallImgProps {
-  alt: string;
-  Img: string;
-  Gif: string;
-  isAnimated: boolean;
-}
 
 /**
  * This component is a Pokemon Ball that changes between an image and a gif when clicked.
@@ -44,7 +38,7 @@ function PokemonBallImg(props: PokemonBallImgProps): JSX.Element {
     <div className="Shaw-poke" onClick={switchPicture}>
       <main
         className={`pokeball`}
-        onAnimationEnd={props.isAnimated?animationEnd:undefined}>
+        onAnimationEnd={props.isAnimated ? animationEnd : undefined}>
         <img
           style={{ visibility: showPoke ? 'visible' : 'hidden' }}
           alt={props.alt}
