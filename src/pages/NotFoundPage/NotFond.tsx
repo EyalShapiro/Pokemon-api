@@ -2,13 +2,17 @@ import { Link } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 import styled from 'styled-components';
 
-import Ghosts from './assets/ghosts.png';
+import ghosts from './assets/ghosts.png';
 import gengar from './assets/gengar.png';
 
 const NotFoundPageContainer = styled(Box)`
   &.notFoundPage {
-    // Your styles for the notFoundPage class
-  }
+    background-color: #6D4B75;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;  }
 `;
 
 const Title = styled(Typography)`
@@ -36,7 +40,8 @@ const HomeLink = styled(Link)`
 `;
 
 const GhostsImage = styled.img`
-  width: 500rem;
+  width: 40rem;
+  
 `;
 
 export default function NotFoundPage() {
@@ -54,7 +59,7 @@ export default function NotFoundPage() {
           Go home !
         </HomeLink>
       </Typography>
-      <GhostsImage src={Ghosts} width="500rem" alt="Fantasmas" />
+      <GhostsImage src={ghosts} alt="Fantasmas" />
     </NotFoundPageContainer>
   );
 }
