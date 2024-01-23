@@ -1,13 +1,13 @@
-import GetColorType, { err_style, data_style, name_style } from './style-Card';
+import { GetColorType, err_style, data_style, name_style } from './style-Card';
 import PokemonBallImg from '../pokeImg/pokeImg.tsx';
-import {CardProps} from"../../types/CardProps.ts"
+import { CardProps } from "../../types/CardProps.ts"
 
 
 interface PokeDataProps {
   color: string;
   id: string;
   text: string;
-  set: string|number| JSX.Element;
+  set: string | number | JSX.Element;
 }
 
 export default function Card(props: CardProps): JSX.Element {
@@ -20,7 +20,7 @@ export default function Card(props: CardProps): JSX.Element {
     <div>
       <p style={err_style} id='err-or-search'>{props.error}</p>
       <ul>
-        <h2 id="name_poke" style={name_style}>{props.pokemon.name} - #{props.pokemon.number}</h2>
+        <h2 id="name_poke" style={name_style}>{props.pokemon.name.toUpperCase()} - #{props.pokemon.id}</h2>
         <PokemonBallImg Gif={props.pokemon.gif} Img={props.pokemon.img} alt={`pokemon:\n ${props.pokemon.name}`} isAnimated={false} />
         <PokeData id="abilities" text={"ABILITIES:"} color='#A34FB8' set={props.pokemon.powers}></PokeData>
         <PokeData id="type" text='TYPE:' color='#9d7373' set={GetColorType(props.pokemon.type)}></PokeData>

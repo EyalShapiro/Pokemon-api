@@ -4,9 +4,9 @@ import './load.css'
  * @return {JSX.Element} The body element with a loader component.
  */
 export default function Reload(): JSX.Element {
-    return (<body>
+    return (<>
         <div className="loader">
             <span className='pokeball-spin'></span>
         </div>
-    </body>)
+    </>)
 }

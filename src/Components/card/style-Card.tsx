@@ -6,13 +6,13 @@ export const err_style: object = {
     fontSize: "130%",
     padding: "10px"
 }
-export const name_style:object = {
+export const name_style: object = {
     color: `#FFCB05`,
     textShadow: `2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5`,
     fontFamily: "'Pokemon Solid', sans-serif",
     fontSize: " 160%",
 }
-export const data_style:object = {
+export const data_style: object = {
     color: "snow",
     border: "teal ridge 4.5px",
     borderRadius: "10px",
@@ -21,7 +21,12 @@ export const data_style:object = {
     padding: '5px'
 }
 
-export default function GetColorType(arr: Array<string>|string|any): JSX.Element {
+/**
+ * GetColorType function takes an array of strings, a string, or any type and returns a JSX element.
+ * @param {Array<string> | string | any} arr - the input array of strings, a string, or any type
+ * @return {JSX.Element} the JSX element representing the color type
+ */
+export function GetColorType(arr: Array<string> | string | any): JSX.Element {
     const type_style = {
         borderRadius: '1rem', padding: '1px'
         , outline: 'auto',
@@ -32,9 +37,9 @@ export default function GetColorType(arr: Array<string>|string|any): JSX.Element
     return (<>
         <ol style={{ ...type_style, background: TypeColor(arr[0]), borderColor: TypeColor(arr[0]) }}>{arr[0]}</ol>
         {(arr.length > 1) ?
-        (        <ol style={{ ...type_style, background: TypeColor(arr[1]), borderColor: TypeColor(arr[1]) }}>{arr[1]}</ol>
-        ) : (<></>)
-    }
+            (<ol style={{ ...type_style, background: TypeColor(arr[1]), borderColor: TypeColor(arr[1]) }}>{arr[1]}</ol>
+            ) : (<></>)
+        }
     </>);
 }
 /**

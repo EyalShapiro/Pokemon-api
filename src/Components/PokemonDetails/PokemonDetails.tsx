@@ -4,12 +4,11 @@ import Card from '../card/Card.tsx'
 import ApiFetch from "../../Api/ApiFetch.ts";
 import './PokemonDetails.css'
 import { NavBarLink } from '../../base/BtnNavBar.tsx';
-import { TypePokemon } from "../../types/pokemon.ts"
+import { Pokemon } from "../../types/pokemon.ts"
 
-async function NewData(input: string) {
-   const data = await ApiFetch(input);
-   const { species, sprites, types, stats } = data;
-   const number = data.id;
+async function NewData(valueSearch: string) {
+   const data = await ApiFetch(valueSearch);
+   const { id, species, sprites, types, stats } = data;
    const name = species.name.toUpperCase();
    const gif =
       sprites.versions["generation-v"]["black-white"].animated.front_default;
@@ -26,19 +25,24 @@ async function NewData(input: string) {
    const attack = stats[4].base_stat;
    const defense = stats[3].base_stat;
    const speed = stats[0].base_stat;
-   const new_pokemon: TypePokemon = {
-      number, name, img,
+   const new_pokemon: Pokemon = {
+      id, name, img,
       gif, type, powers, hp,
       attack, defense, speed,
    };
    return new_pokemon;
 }
 
+/**
+ * Fetches and displays details of a Pokemon.
+ * @param {string} id - The unique identifier of the Pokemon.
+ * @return {void}
+ */
 function PokemonDetails() {
 
-   const { id } = useParams<string>() || '';
+   const { id } = useParams<string>()
 
-   const [pokemonData, setPokemonData] = useState<TypePokemon>();
+   const [pokemonData, setPokemonData] = useState<Pokemon>();
 
    useEffect(() => {
       const fetchData = async () => {

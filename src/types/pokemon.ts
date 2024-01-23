@@ -1,5 +1,5 @@
-export interface TypePokemon {
-   number: string;
+export interface Pokemon {
+   id: number;
    name: string;
    img: string;
    gif: string;

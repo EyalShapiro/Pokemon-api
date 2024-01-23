@@ -1,6 +1,6 @@
-import { TypePokemon } from "./pokemon.ts"
+import { Pokemon } from "./pokemon.ts"
 
 export interface CardProps {
    error: string;
-   pokemon: TypePokemon;
+   pokemon: Pokemon;
 }

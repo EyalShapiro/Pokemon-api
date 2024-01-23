@@ -1,5 +1,5 @@
 .PokemonDetails {
-   background-image: url("./assets/back_ball.png");
+   background-image: url("../ListShowPoke/assets/leg.png");
    background-attachment: scroll, local;
    background-blend-mode: lighten;
 

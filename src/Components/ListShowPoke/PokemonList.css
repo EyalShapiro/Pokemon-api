@@ -10,10 +10,9 @@
   padding: 0;
   margin: 0;
   background-clip: padding-box;
-  display: flex;
   flex-wrap: wrap;
-  text-align: center;
   position: sticky;
+
 }
 
 #total {
@@ -36,6 +35,13 @@
   margin: 0.1%;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .pagination {
   padding: 1%;
   margin-left: 20%;
@@ -49,10 +55,6 @@
   margin-top: 2%;
 }
 
-.pagination > p {
-  font-size: 150%;
-
-}
 
 .pokemon-container {
   display: flex;
@@ -63,8 +65,7 @@
   background: rgba(65, 153, 153, 0.2);
   box-sizing: border-box;
   border-radius: 1rem;
-  padding: auto;
-  margin: 10px;
+  margin: 1%;
 }
 
 
@@ -72,7 +73,8 @@
   color: #FFCB05;
   font-family: 'Pokemon Solid', sans-serif;
   font-size: 150%;
-
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #prev {

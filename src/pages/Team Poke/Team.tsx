@@ -2,11 +2,14 @@
 import React from "react";
 import './assets/style.css'
 import CatchingPokemonTwoToneIcon from '@mui/icons-material/CatchingPokemonTwoTone';
-import TextBuild  from "./TextBuild";
-function ImageGrid() {
+import TextBuild from "./TextBuild";
 
-  const IconStyle = {
-    fontSize: 100, color: 'red', backgroundColor: '#90ee9073', borderRadius: '10%'
+function ImageGrid() {
+  const IconStyle: React.CSSProperties = {
+    fontSize: 100,
+    color: 'red',
+    backgroundColor: '#90ee9073',
+    borderRadius: '10%'
   };
   return (
     <div className="team">
@@ -15,7 +18,7 @@ function ImageGrid() {
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '10px'
       }}>
-        {[...Array(6)].map((index) => (
+        {[...Array(6)].map(() => (
           <CatchingPokemonTwoToneIcon sx={IconStyle} />))}
       </div>
       <TextBuild />
