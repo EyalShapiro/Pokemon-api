@@ -1,0 +1,75 @@
+@import url("./all-btn.css");
+.content-img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.PokemonApp {
+  background-image: url("./backrond.png");
+  background-attachment: scroll, local;
+  display: flex;
+  text-align: center !important;
+  margin: 1px;
+  /* overflow: auto !important; */
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.poke-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #4589895a;
+  outline: #8dd899 ridge 10px;
+  border: #548f8f ridge 10px;
+  margin: 1px;
+  height: auto;
+  padding: 100px;
+  margin: 1%;
+}
+
+.Search-Poke {
+  /* padding: 1%; */
+  outline: tan ridge 4px;
+  border: #ecbd8b80 ridge 5px;
+  background: #ecbd8b80;
+  margin: 1%;
+  align-self: start;
+  border-radius: 6%;
+  padding: 1% 2% 6%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5% 10%;
+}
+
+#search,
+#search::placeholder {
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+  margin-top: 4%;
+  color: #ffcb05;
+  outline: #4074b5 solid 4px;
+  border: #548f8f ridge 5px;
+  font-size: 20px;
+  font-family: "Pokemon Solid", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.poke-info > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1px;
+}
